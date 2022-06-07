@@ -85,6 +85,12 @@
     i {
       font-size: 40px;
     }
+    h3 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
 
     %skill-round {
       @include flexcolumn(5px, center, center);
@@ -92,6 +98,9 @@
       width: 35vh;
       height: 35vh;
       text-align: center;
+    }
+    > article:nth-child(1) h2{
+      font-size: 40px;
     }
     > article:nth-child(2) {
       @include flexcolumn(20px, center, center);
