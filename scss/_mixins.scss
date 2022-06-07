@@ -1,0 +1,12 @@
+// place the elements in coloumn
+@mixin  flexcolumn(
+  $rowgap: 10px,
+  $alignitems: center,
+  $justifycontent: center
+) {
+  display: flex;
+  flex-direction: column;
+  row-gap: $rowgap;
+  align-items: $alignitems;
+  justify-content: $justifycontent;
+}

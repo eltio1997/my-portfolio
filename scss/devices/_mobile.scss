@@ -1,0 +1,232 @@
+@media (min-width: 300px) {
+  header {
+    h1 {
+      color: $defaultcolor;
+      width: fit-content;
+    }
+    aside {
+      background-image: url(/img/pexels-ray-bilcliff-2055389.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 40vh;
+    }
+    summary {
+      color: white;
+      font-size: 30px;
+      padding: 2%;
+    }
+    nav {
+      width: 60%;
+      padding-left: 2%;
+      details {
+        position: relative;
+      }
+      ul {
+        padding-left: 0;
+      }
+      li {
+        width: 100%;
+        list-style-type: none;
+        border: 1px solid gainsboro;
+        text-align: center;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+      }
+      a {
+        width: 100%;
+        text-decoration: none;
+        color: $defaultcolor;
+      }
+      a:hover {
+        color: white;
+        background-color: $color2;
+      }
+    }
+    nav > ul {
+      display: none;
+      position: absolute;
+    }
+
+    .subheader {
+      display: flex;
+      padding-top: 3%;
+      // position: fixed;
+      // width: 100%;
+      // background-color: $color1;
+      // z-index: 2;
+      // background-color: $color2;
+    }
+  }
+
+  .about {
+    padding: 5% 3% 5% 3%;
+    h2 {
+      font-size: 30px
+    }
+  }
+
+  .projects {
+    @include flexcolumn(10px, center, center);
+    padding: 10% 0 10% 0;
+    > article:nth-child(2) {
+      @include flexcolumn(20px, center, center);
+    }
+  }
+
+  .skills {
+    @include flexcolumn(20px, center, center);
+    padding: 10% 0 10% 0;
+    div {
+      display: none;
+    }
+    i {
+      font-size: 40px;
+    }
+
+    %skill-round {
+      @include flexcolumn(5px, center, center);
+      border-radius: 50%;
+      width: 35vh;
+      height: 35vh;
+      text-align: center;
+    }
+    > article:nth-child(2) {
+      @include flexcolumn(20px, center, center);
+    }
+    .main-skill {
+      @extend %skill-round;
+      background-color: $defaultcolor;
+      color: $color1;
+    }
+    .soft-skill {
+      @extend %skill-round;
+      background-color: $color2;
+    }
+    .professional-skill {
+      @extend %skill-round;
+      background-color: $color1;
+      color: white;
+    }
+    aside:hover {
+      i {
+        display: none;
+      }
+      div{
+        @include flexcolumn(0, center, center);
+      }
+    }
+
+  }
+
+  .education {
+    @include flexcolumn(10px, center, center);
+    article:nth-child(1) h2 {
+      font-size: 32px;
+    }
+    
+    #card {
+      @include flexcolumn(20px, center, center);
+      padding: 0 0 5% 0;
+      margin: 0;
+     
+      .card{
+        width: 100%;
+        text-align: center;
+        border: 2px solid $color2;
+      }
+
+
+      .col-sm-4{
+        width: 60%;
+        padding: 0%;
+      }
+
+      [class^="btn"] {
+        color: black;
+        border: 0;
+      }
+      
+    }
+  }
+  .contact {
+    background-color: $color1;
+    text-align: center;
+    @include flexcolumn(10px, unset, center);
+    padding: 5%;
+    h3 {
+      color: white;
+      font-size: 28px;
+    }
+    aside {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 20px;
+      height: 15vh;
+    }
+    i {
+      color: white;
+      font-size: 40px;
+    }
+    article:nth-child(1) {
+      color: white;
+    }
+    article:nth-child(2) {
+      @include flexcolumn(10px, unset, center);
+    }
+    form {
+      @include flexcolumn(5px, center, center);
+      > input {
+        padding: 2%;
+        width: 90%;
+      }
+
+      textarea {
+        width: 90%;
+        height: 20vh;
+        padding: 2%;
+      }
+    }
+    [type="submit"] {
+      width: 20vh;
+      height: 5vh;
+      border-radius: 5%;
+    }
+  }
+
+  footer {
+    padding: 3%;
+    background-color: $defaultcolor;
+    color: black;
+    width: 100%;
+    article{
+      @include flexcolumn(10px, unset, unset);
+    }
+    div {
+      display: flex;
+      column-gap: 5px;
+    }
+    i {
+      padding: 1%;
+      height: fit-content;
+      color: white;
+    }
+    span {
+      display: flex;
+      column-gap: 10px;
+    }
+    div:nth-child(3) {
+      height: 3vh;
+    }
+    a {
+      color: $color1;
+      text-decoration: none;
+    }
+    address {
+      font-size: 13px;
+    }
+  }
+}

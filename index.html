@@ -10,13 +10,12 @@
   <title>My Portfolio</title>
 </head>
 <body>
-
   <header id="home">
     <aside>
-      <div>
+      <div class="subheader">
         <nav>
           <details>
-            <summary></summary>
+            <summary class="fa-solid fa-ellipsis-vertical"></summary>
             <ul>
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
@@ -43,11 +42,19 @@
     <!-- about section start -->
     <section class="about" id="about">
       <h2>About Me</h2>
-      <p>As I have studied about Web Development in online school and Tamwood College,
-        I'd like to work as a Frontend Web Developer. When I face a challenge,
-        I always introspect much about it and try to find a better solution.
-        And I'm also a polite person. I always respect others opinion and
-        work with team properly.
+      <p>
+        When I first learned Programming Language at online school,
+        I was attracted to the convenience of creating the system and then automating. 
+        As there are not much information and resources about Web development in my country.
+        I became interested in studying about it in an English-speaking country. That was how I
+         decided to take the coop program in Tamwood College. In this course, I've been learning HTML, CSS, SCSS, 
+         Github, Flexbox, Google Fonts, Fontawesome, Bootstrap in the past two month.
+         When I face a challenge,
+         I always introspect much about it and try to find a better solution.
+         And I'm also polite and punctual. I always respect others opinion and
+         work with team properly. For the above things, 
+         I'd like to work in Vancouver as a Frontend Web Developer within a few years.
+         and make sure our projects can be done on time and effectively.
       </p>
     </section>
     <!-- about section end -->
@@ -61,7 +68,7 @@
       <article>
         <div class="card" style="width: 18rem;">
                     
-          <img src="/img/img-01.jpeg" class="card-img-top" alt="Project-01"> 
+          <img src="/img/pic-01.jpg" class="card-img-top" alt="Project-01"> 
          
           <div class="card-body">
               <h5 class="card-title">Green Website</h5>
@@ -69,13 +76,13 @@
                   By using HTML and CSS, I created a single website which includes pictures and articles.
               </p>
               <a href="#" class="btn btn-success">
-                  Go somewhere
+                  Go to my project
               </a>
           </div>
       </div>
         <div class="card" style="width: 18rem;">
                     
-          <img src="/img/img-02.png" class="card-img-top" alt="Project-02"> 
+          <img src="/img/pic-02.jpg" class="card-img-top" alt="Project-02"> 
          
           <div class="card-body">
               <h5 class="card-title">Animation</h5>
@@ -83,13 +90,13 @@
                   By using CSS Animation, I created small animation which moves elements from one location to another.
               </p>
               <a href="#" class="btn btn-success">
-                  Go somewhere
+                  Go to my project
               </a>
           </div>
       </div>
         <div class="card" style="width: 18rem;">
                     
-          <img src="/img/img-03.jpg" class="card-img-top" alt="Project-03"> 
+          <img src="/img/pic-03.jpg" class="card-img-top" alt="Project-03"> 
          
           <div class="card-body">
               <h5 class="card-title">Composite</h5>
@@ -97,13 +104,13 @@
                   By using HTML, SCSS, Github, I created responsive websites which include icons and bar.
               </p>
               <a href="#" class="btn btn-success">
-                  Go somewhere
+                  Go to my project
               </a>
           </div>
       </div>
         <div class="card" style="width: 18rem;">
                     
-          <img src="/img/img-04.jpg" class="card-img-top" alt="Project-04"> 
+          <img src="/img/pic-04.jpg" class="card-img-top" alt="Project-04"> 
          
           <div class="card-body">
               <h5 class="card-title">Final Project</h5>
@@ -111,7 +118,7 @@
                   By using HTML and CSS, I created 4 pages of the website which include a video, pictures, form, tables.
               </p>
               <a href="#" class="btn btn-success">
-                  Go somewhere
+                  Go to my project
               </a>
           </div>
       </div>
@@ -126,18 +133,27 @@
           adipisicing elit. Iste ullam enim totam alias, iure inventore!</p>
       </article>
       <article>
-        <div>
-          <h3>Languages</h3>
-          <p>English, Japanese</p>
-        </div>
-        <div>
-          <h3>Soft Skills</h3>
-          <p>polite, diligent, hardworking, dedicated, punctual</p>
-        </div>
-        <div>
-          <h3>Professional Skills</h3>
-          <p>HTML, CSS, Introduction to JavaScript, Excel, SCSS, Bootstrap, Responsive Website</p>
-        </div>
+        <aside class="main-skill">
+          <i class="fa-solid fa-house"></i>
+          <div>
+            <h3>Main Skills</h3>
+            <p>hard working, respectful, responsible, supportive, flexible</p>
+          </div>
+        </aside>
+        <aside class="soft-skill">
+          <i class="fa-solid fa-person"></i>
+          <div>
+            <h3>Soft Skills</h3>
+            <p>polite, diligent, good listener, dedicated, punctual</p>
+          </div>
+        </aside>
+        <aside class="professional-skill">
+          <i class="fa-solid fa-desktop"></i>
+          <div>
+            <h3>Professional Skills</h3>
+            <p>HTML, CSS, Introduction to JavaScript, Excel, SCSS, Bootstrap, Responsive Website</p>
+          </div>
+        </aside>
       </article>
     </section>
     <!-- skills section end -->
@@ -148,22 +164,27 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing 
           elit. Harum dicta ullam accusamus est itaque nisi.</p>
       </article>
-      <div class="row">
+      <div class="row" id="card">
         <div class="col-sm-4">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Certificate of Upper secondary school </h5>
-              <p class="card-text">I have successfully passed the subject exam for all subjects of upper secondary school graduates.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Certificate of Upper Secondary School </h5>
+              <p class="card-text">I didn't graduate high school, but
+                I have successfully passed the subject exam for all subjects
+                 of upper secondary school graduates. 
+                </p>
+              <a href="https://amagasakioda.ed.jp/" class="btn btn-warning">Learn More</a>
             </div>
           </div>
         </div>
         <div class="col-sm-4">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Tamwood Language Centres</h5>
-              <p class="card-text">I have successfully completed the English Language Program</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Tamwood College</h5>
+              <p class="card-text">I have successfully completed the English
+                 Language Program and I've been learning html, css, github, scss, bootstrap in Tamwood College.
+              </p>
+              <a href="https://tamwood.com/careers/web-developer" class="btn btn-warning">Learn More</a>
             </div>
           </div>
         </div>
@@ -183,8 +204,10 @@
           <input type="text" name="name" placeholder="Name">
           <input type="email" name="email" placeholder="Email">
           <input type="subject" name="subject" placeholder="Subject">
-          <textarea placeholder="Message"></textarea>
-          <input type="submit" value="Send">
+          <textarea placeholder="Message" name="message"></textarea>
+          <div>
+            <input type="submit" value="Send">
+          </div>
         </form>
         <aside>
           <i class="fa-brands fa-line"></i>
