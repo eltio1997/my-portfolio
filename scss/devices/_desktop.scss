@@ -1,0 +1,111 @@
+@media (min-width: 1000px) {
+
+  header {
+    h1 {
+      width: 150vh;
+      font-size: 55px;
+    }
+    nav > ul {
+      height: 5vh;
+    }
+    a {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .projects {
+    > article:nth-child(2) {
+      column-gap: 100px;
+      row-gap: 150px;
+      width: 70%;
+    }
+
+  }
+
+  .skills {
+    > article:nth-child(1) {
+      width: 70%;
+    }
+    .soft-skill, 
+    .main-skill,
+    .professional-skill {
+      width: 30vh;
+      height: 30vh;
+    }
+
+    h3 {
+      font-size: 25px;
+    }
+  }
+
+  .education {
+    > article:nth-child(1) {
+      row-gap: 15px;
+    }
+    #card {
+      [class^="btn"] {
+        width: 80%;
+      }
+    }
+  }
+  .contact {
+    row-gap: 50px;
+    > article:nth-child(1) {
+      row-gap: 20px;
+      height: 20vh;
+    }
+    > article:nth-child(1) h2 {
+      font-size: 50px;
+    }
+    > article:nth-child(2) {
+      column-gap: 40px;
+      justify-content: space-around;
+    }
+
+   p {
+     font-size: 30px;
+   }
+    form {
+      row-gap: 7px;
+      input, textarea {
+        width: 50vh;
+        padding: 3%;
+      }
+    }
+
+    h3 {
+      font-size: 40px;
+    }
+
+    aside {
+      height: 20vh;
+      column-gap: 30px;
+    }
+
+    i {
+      font-size: 65px;
+    }
+
+    [type="submit"] {
+      width: 27vh;
+      height: 7vh;
+      font-size: 25px;
+    }
+  }
+  footer {
+    article{
+      justify-content: space-evenly;
+    }
+
+    div {
+      font-size: 25px;
+    }
+
+    address {
+      font-size: 20px;
+    }
+  }
+}
