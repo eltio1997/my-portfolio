@@ -6,6 +6,7 @@
       width: 90vh;
       height: 40vh;
       display: flex;
+      justify-content: left;
       align-items: center;
       font-size: 50px;
     }
@@ -14,6 +15,7 @@
     }
     nav {
       padding-left: 0;
+      height: fit-content;
       a {
         font-size: 18px;
       }
@@ -33,7 +35,6 @@
 
   .about {
     > h2{
-      text-align: center;
       font-size: 40px;
     }
     > p{

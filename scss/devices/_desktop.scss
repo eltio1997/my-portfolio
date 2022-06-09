@@ -2,8 +2,11 @@
 
   header {
     h1 {
-      width: 150vh;
+      width: 160vh;
       font-size: 55px;
+      display: flex;
+      align-items: center;
+      
     }
     nav > ul {
       height: 5vh;
@@ -16,6 +19,7 @@
     }
   }
 
+
   .projects {
     > article:nth-child(2) {
       column-gap: 100px;
@@ -26,6 +30,7 @@
   }
 
   .skills {
+    height: 80vh;
     > article:nth-child(1) {
       width: 70%;
     }
